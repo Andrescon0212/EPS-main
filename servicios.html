@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Página con Carrusel y Footer</title>
+<!-- Incluir Bootstrap desde CDN -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Incluir el archivo CSS externo -->
+<link rel="stylesheet" href="./estilos.css">
+</head>
+<body>
+
+<!-- Primer Navbar con Logo -->
+<!-- Primer Navbar más grande -->
+<nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+    <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+        <img src="./img/logo.jfif" alt="Logo" width="50" height="50" class="d-inline-block align-text-top">
+        EPS
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+            <a class="nav-link active fs-5" href="./index.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link fs-5" href="./servicios.html">Servicios</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link fs-5" href="./sedes.html">Sedes</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link fs-5" href="#">Noticias</a>
+        </li>
+        </ul>
+        <button class="btn btn-outline-light btn-lg">Iniciar Sesión</button>
+    </div>
+    </div>
+</nav>
+
+<!-- Segundo Navbar con mejor distribución -->
+    <nav class="navbar navbar-light navbar-custom">
+        <div class="container-fluid">
+        <form class="d-flex w-50">
+            <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Buscar">
+            <button class="btn btn-custom" type="submit">Buscar</button>
+        </form>
+        <div class="d-flex ms-auto">
+            <button class="btn btn-custom me-2">Contacto</button>
+            <button class="btn btn-custom">Certificado</button>
+        </div>
+        </div>
+    </nav>
+
+    <div id="carouselExampleCaptions" class="carousel slide mt-4 w-100" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./img/carruselservicios1.jfif" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>First slide label</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./img/carruselservicios2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Second slide label</h5>
+                    <p>Some representative placeholder content for the second slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./img/carruselservicios3.jfif" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <div class="container mt-4 text-justify">
+        <h2 class="mb-4">Servicios Pensados para Ti</h2>
+        <p class="lead">
+            En nuestra EPS, tu salud es nuestra prioridad. Por eso, hemos diseñado una variedad de servicios que te acompañan en cada momento, desde lo más simple hasta lo más especializado.
+        </p>
+        <p>
+            ¿Necesitas una cita médica? ¡Es muy fácil! Con unos cuantos clics, puedes agendar tu consulta en la sede que te quede más cómoda. Además, si necesitas medicamentos, puedes solicitarlos de manera rápida y sencilla sin complicaciones.
+        </p>
+        <p>
+            Nuestro equipo de laboratorio está siempre listo para brindarte resultados confiables y rápidos, porque sabemos lo importante que es para ti tener respuestas claras y a tiempo. Y si alguna vez tienes dudas, nuestro asesor en línea estará disponible para ayudarte a resolver cualquier inquietud que tengas.
+        </p>
+        <p>
+            Estamos aquí para que te sientas bien cuidado y acompañado en cada paso. ¡Porque tu salud merece lo mejor!
+        </p>
+    </div>
+
+            <!-- Sección de las 6 Cards -->
+    <div class="container mt-4">
+        <div class="row">
+        <div class="col-md-4">
+            <div class="card mb-2">
+            <img src="./img/citas.jpg" class="card-img-top" alt="Card 1">
+            <div class="card-body text-center">
+                <h5 class="card-title">Citas</h5>
+                <p class="card-text">Asigna o mira el estado de tu cita.</p>
+                <a href="#" class="btn btn-primary">Ver más</a>
+            </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-2">
+            <img src="./img/medicamentos.webp" class="card-img-top" alt="Card 2">
+            <div class="card-body text-center">
+                <h5 class="card-title">Medicamentos y consultas</h5>
+                <p class="card-text">Solicitud de Medicamentos.</p>
+                <a href="#" class="btn btn-primary">Ver más</a>
+            </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-2">
+            <img src="./img/pagos.jfif" class="card-img-top" alt="Card 3">
+            <div class="card-body text-center">
+                <h5 class="card-title">Descargas historial clinico</h5>
+                <p class="card-text">Consulta la información sobre tus pagos.</p>
+                <a href="#" class="btn btn-primary">Ver más</a>
+            </div>
+            </div>
+        </div>
+        </div>
+
+        <div class="row">
+        <div class="col-md-4">
+            <div class="card mb-2">
+            <img src="./img/laboratorio.jfif" class="card-img-top" alt="Card 4">
+            <div class="card-body text-center">
+                <h5 class="card-title">Solicitudes y segerencias</h5>
+                <p class="card-text">Resultados y solicitud de examenes de laboratorio</p>
+                <a href="#" class="btn btn-primary">Ver más</a>
+            </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-2">
+            <img src="./img/accesor.avif" class="card-img-top" alt="Card 5">
+            <div class="card-body text-center">
+                <h5 class="card-title">Laboratorios</h5>
+                <p class="card-text">Chatea con un ascesor.</p>
+                <a href="#" class="btn btn-primary">Ver más</a>
+            </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-2">
+            <img src="./img/sedes.jfif" class="card-img-top" alt="Card 6">
+            <div class="card-body text-center">
+                <h5 class="card-title">Actualización de datos</h5>
+                <p class="card-text">Conoce nuestras sedes.</p>
+                <a href="#" class="btn btn-primary">Ver más</a>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-section">
+        <h5>Sobre Nosotros</h5>
+        <p>Somos una EPS comprometida con tu salud y bienestar. Ofrecemos una amplia gama de servicios médicos para garantizar el mejor cuidado posible.</p>
+        </div>
+        <div class="footer-section">
+        <h5>Enlaces Rápidos</h5>
+        <ul>
+            <li><a href="#">Afiliaciones</a></li>
+            <li><a href="#">Citas Médicas</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Emergencias</a></li>
+        </ul>
+        </div>
+        <div class="footer-section">
+        <h5>Contacto</h5>
+        <ul>
+            <li><a href="#">Teléfono: (123) 456-7890</a></li>
+            <li><a href="#">Email: contacto@eps.com</a></li>
+        </ul>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+        </div>
+        <div class="footer-section logo">
+        <img src="./img/logo.jfif" alt="Logo de la EPS">
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

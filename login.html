@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iniciar Sesión</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9and+0n0Miwzm/WPy'i4u+GQndk2vSu18VhUYY396Vu29i05896j7gaDIdd9zH1" crossorigin="anonymous">
+  <link rel="stylesheet" href="./estilos.css"> </head>
+<body>
+
+    <!-- Primer Navbar con Logo -->
+<!-- Primer Navbar más grande -->
+<nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+    <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+        <img src="./img/logo.jfif" alt="Logo" width="50" height="50" class="d-inline-block align-text-top">
+        EPS
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+            <a class="nav-link active fs-5" href="./index.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link fs-5" href="./servicios.html">Servicios</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link fs-5" href="./sedes.html">Sedes</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link fs-5" href="#">Noticias</a>
+        </li>
+        </ul>
+        <a href="./login.html"><button class="btn btn-outline-light btn-lg">Iniciar Sesión</button></a>
+    </div>
+    </div>
+</nav>
+
+<!-- Segundo Navbar con mejor distribución -->
+    <nav class="navbar navbar-light navbar-custom">
+        <div class="container-fluid">
+        <form class="d-flex w-50">
+            <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Buscar">
+            <button class="btn btn-custom" type="submit">Buscar</button>
+        </form>
+        <div class="d-flex ms-auto">
+            <button class="btn btn-custom me-2">Contacto</button>
+            <button class="btn btn-custom">Certificado</button>
+        </div>
+        </div>
+    </nav>
+    <br><br><br>
+
+
+  <div class="container mt-5">
+    <div class="row justify-content-center">
+      <div class="col-md-6 login-form"> <div class="card">
+          <div class="card-header">
+            Iniciar Sesión
+          </div>
+          <div class="card-body">
+            <form id="formulario-login">
+              <div class="mb-3">
+                <label for="usuario" class="form-label">Usuario:</label>
+                <input type="text" class="form-control" id="usuario" name="usuario">
+              </div>
+              <div class="mb-3">
+                <label for="contrasena" class="form-label">Contraseña:</label>
+                <input type="password" class="form-control" id="contrasena" name="contrasena">
+              </div>
+              <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,294 @@
+    .hero {
+        background-image: url('./img/index1.jpg'); /* Reemplaza con tu imagen */
+        background-size: cover;
+        background-position: center;
+        height: 100vh; /* Toma toda la altura de la pantalla */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: rgb(255, 255, 255);
+        text-align: center;
+    }
+
+    body{
+        background-color: #c2c2ff;
+    }
+
+    /* Aumentar el tamaño del primer Navbar */
+    .navbar {
+        font-size: 1.2rem; /* Aumentar el tamaño del texto */
+    }
+    
+    .navbar-brand {
+        font-size: 1.8rem; /* Aumentar el tamaño del logo y texto */
+    }
+    
+    .navbar-dark .navbar-nav .nav-link {
+        margin-right: 1rem; /* Añadir separación entre los enlaces del navbar */
+    }
+    
+    .navbar .btn-lg {
+        padding: 10px 20px; /* Ampliar el botón de iniciar sesión */
+    }
+    
+    /* Ajustar el segundo navbar */
+    .navbar-light {
+        border-bottom: 1px solid #ddd; /* Añadir un borde debajo para separación visual */
+    }
+    
+    .navbar-light .btn {
+        font-size: 1rem; /* Tamaño consistente para los botones */
+    }
+    
+    .navbar-light .form-control {
+        border-radius: 5px; /* Suavizar los bordes del input de búsqueda */
+    }
+    
+
+    /* Color de los navbars */
+    .navbar-custom {
+        background-color: #336699; /* Azul moderado */
+    }
+
+    /* Color de los botones del buscador */
+    .navbar-light .btn-custom {
+        background-color: #275080; /* Un tono acorde con el navbar */
+        color: white;
+        border: none;
+    }
+
+    /* Opcional: Estilo de hover para los botones */
+    .navbar-light .btn-custom:hover {
+        background-color: #193d66;
+        color: white;
+    }
+
+    /* Color de los navbars */
+.navbar-custom {
+    background-color: #336699; /* Azul moderado */
+}
+
+/* Estilos para los enlaces del tercer navbar */
+.navbar-custom .nav-link {
+    color: white; /* Texto blanco */
+}
+
+.navbar-custom .nav-link:hover {
+    color: #b3d1ff; /* Color más claro al hacer hover */
+}
+
+/* Botones personalizados del buscador y demás */
+.navbar-light .btn-custom {
+    background-color: #275080; /* Un tono acorde con el navbar */
+    color: white;
+    border: none;
+}
+
+.navbar-light .btn-custom:hover {
+    background-color: #193d66;
+    color: white;
+}
+
+.carousel-item img {
+    max-height: 400px; /* Ajusta el valor según el tamaño deseado */
+    object-fit: cover; /* Asegura que la imagen se ajuste al contenedor sin deformarse */
+}
+
+.container h2 {
+    color: #0056b3; /* Un azul agradable */
+    font-weight: bold;
+}
+
+.container p {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 1.2rem;
+}
+
+/*login*/
+.login-form {
+    text-align: center; /* Centra el contenido del formulario */
+  }
+  
+  .card {
+    border-radius: 10px; /* Bordes redondeados para la tarjeta */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para darle profundidad */
+  }
+  
+  .btn-primary {
+    border-radius: 30px; /* Botón redondeado */
+    padding: 15px 30px; /* Más espacio interior */
+    font-weight: bold; /* Fuente más gruesa */
+    box-shadow: none; /* Quita la sombra del botón de Bootstrap */
+  }
+  
+  /* Personaliza los colores según tus preferencias */
+  .card {
+    background-color: #f8f9fa;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    border: none;
+  }
+
+/*citas*/
+
+.service-card {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    background-color:  #c9dbec;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .service-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #0056b3;
+  }
+  
+  .card-text {
+    font-size: 1rem;
+    color: #333;
+    text-align: center;
+  }
+  
+  .btn-primary {
+    background-color: #0056b3;
+    border-color: #0056b3;
+    margin-top: 10px;
+  }
+  
+  .formulario-cita {
+    background-color: #bcc4f0;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px; /* Ajusta el ancho máximo según sea necesario */
+    margin: 0 auto; /* Centra el formulario */
+  }
+  
+  .formulario-seccion {
+    margin-bottom: 20px;
+  }
+  
+  .formulario-seccion h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .formulario-tarjeta {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+
+    /* Ajustar márgenes y rellenos */
+    .mt-0 { margin-top: 0 !important; }
+    .mb-0 { margin-bottom: 0 !important; }
+    .pt-0 { padding-top: 0 !important; }
+    .pb-0 { padding-bottom: 0 !important; }
+    .footer {
+        background-color: #f8f9fa;
+    }
+    /* Estilo general del footer */
+    .footer {
+        background-color: #004080; /* Fondo de color azul oscuro */
+        padding: 40px 20px;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    
+    .footer h5 {
+        font-size: 1.8rem; /* Aumenta el tamaño de los encabezados */
+        margin-bottom: 20px;
+        font-weight: bold;
+    }
+    
+    .footer ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    
+    .footer ul li {
+        margin-bottom: 10px;
+    }
+    
+    .footer ul li a {
+        text-decoration: none;
+        color: white;
+        font-size: 1.3rem; /* Aumenta el tamaño de los enlaces */
+        transition: color 0.3s ease; /* Transición para un efecto suave en hover */
+    }
+    
+    .footer ul li a:hover {
+        color: #ffcc00; /* Color amarillo cuando se pasa el mouse por encima */
+    }
+    
+    /* Iconos sociales */
+    .footer .social-icons a {
+        font-size: 1.5rem;
+        color: white;
+        margin-right: 15px;
+        transition: transform 0.3s ease, color 0.3s ease;
+    }
+    
+    .footer .social-icons a:hover {
+        color: #ffcc00; /* Cambia el color al pasar el mouse */
+        transform: scale(1.2); /* Agranda el icono al pasar el mouse */
+    }
+    
+    .footer p {
+        font-size: 1.2rem; /* Aumenta el tamaño del texto */
+    }
+    
+    /* Ajuste del logo en el footer */
+    .footer .logo img {
+        max-width: 120px; /* Tamaño del logo */
+    }
+
+    /* Estilos para la sección "Sobre Nosotros" del footer */
+    .footer-section {
+        max-width: 400px; /* Limitar el ancho para evitar que el texto sea muy largo */
+        margin: 0 auto; /* Centrar el contenido */
+        text-align: center; /* Centrar el texto */
+    }
+    
+    .footer-section h5 {
+        font-size: 1.8rem; /* Tamaño más grande para el título */
+        margin-bottom: 15px; /* Espacio debajo del título */
+        color: #007bff; /* Color del título */
+    }
+    
+    .footer-section p {
+        font-size: 1rem; /* Tamaño del texto ajustado */
+        color: #ffffff; /* Color suave para el texto */
+        line-height: 1.6; /* Espaciado entre líneas */
+    }
+    
+    .footer-section p strong {
+        color: #007bff; /* Color destacado para las palabras clave */
+    }
+    
+    
+    /* Diseño responsivo */
+    @media (max-width: 768px) {
+        .footer {
+        text-align: center;
+        }
+        .footer .social-icons {
+        justify-content: center;
+        margin-top: 20px;
+        }
+    }
+    
